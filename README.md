@@ -1,6 +1,6 @@
 # SDRC - Santo Domingo Rugby Club
 
-Landing Page of Santo Domingo Rugby Club (SDRC)
+ Landing Page of Santo Domingo Rugby Club (SDRC)
 
 ## 🚀 Firebase Hosting Setup
 
