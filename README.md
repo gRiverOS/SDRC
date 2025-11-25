@@ -1,6 +1,6 @@
-# SDRC - Santo Domingo Rugby Club
+# SDRC - Club de Rugby Santo Domingo
 
- Landing Page of Santo Domingo Rugby Club (SDRC)
+ Landing Page of Club de Rugby Santo Domingo (SDRC)
 
 ## 🚀 Firebase Hosting Setup
 
@@ -35,16 +35,21 @@ This is a Firebase web application ready to be deployed to Firebase Hosting (fre
 
 ### Deployment
 
-1. **Deploy to Firebase Hosting:**
-   ```bash
-   firebase deploy --only hosting
-   ```
+**Opción 1: Usar el script de despliegue (recomendado)**
+```bash
+./deploy.sh
+```
 
-2. **Preview locally before deploying:**
-   ```bash
-   firebase serve
-   ```
-   Then visit `http://localhost:5000` in your browser.
+**Opción 2: Desplegar manualmente**
+```bash
+firebase deploy --only hosting
+```
+
+**Preview local antes de desplegar:**
+```bash
+firebase serve
+```
+Luego visita `http://localhost:5000` en tu navegador.
 
 ### Project Structure
 
@@ -93,4 +98,4 @@ SDRC/
 
 ---
 
-© 2024 Santo Domingo Rugby Club. All rights reserved.
+© 2024 Club de Rugby Santo Domingo. All rights reserved.
