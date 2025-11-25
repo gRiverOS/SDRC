@@ -46,22 +46,25 @@
 
 Si quieres redirigir `www` a la versión sin www (o viceversa):
 
-1. En Firebase Hosting, agrega ambos dominios
-2. Configura redirecciones en `firebase.json`:
+1. En Firebase Hosting, agrega ambos dominios (`santodomingorugby.com` y `www.santodomingorugby.com`)
+2. En Firebase Console → Hosting → Configuración de dominio, puedes configurar redirecciones automáticas
+3. O configura redirecciones en `firebase.json` (solo si necesitas redirecciones específicas):
 
 ```json
 {
   "hosting": {
     "redirects": [
       {
-        "source": "/",
-        "destination": "https://santodomingorugby.com",
+        "source": "https://www.santodomingorugby.com/**",
+        "destination": "https://santodomingorugby.com/:splat",
         "type": 301
       }
     ]
   }
 }
 ```
+
+**Nota**: Firebase Hosting puede manejar redirecciones automáticas desde la consola, lo cual es más simple.
 
 ## 🔧 Configuración de DNS en GoDaddy - Detallada
 
