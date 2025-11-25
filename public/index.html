@@ -233,9 +233,13 @@
             border-color: #F0FF32;
         }
         .grid-item img {
-            max-width: 100%;
+            max-width: 100px;
+            width: 100px;
             height: auto;
-            margin-bottom: 15px;
+            margin: 0 auto 15px auto;
+            object-fit: contain;
+            display: block;
+            border-radius: 5px;
         }
         footer {
             background-color: #1A3638; /* very dark teal/almost black-green */
@@ -339,6 +343,16 @@
                 margin-right: 0;
                 margin-bottom: 0.5rem;
             }
+            .grid-item img {
+                max-width: 100px;
+                width: 100px;
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-item img {
+                max-width: 80px;
+                width: 80px;
+            }
         }
     </style>
 </head>
@@ -420,17 +434,17 @@
                 <div class="grid-item" data-aos="flip-left" data-aos-delay="200">
                     <h3>Equipo Senior Masculino</h3>
                     <p>Nuestro equipo estandarte, compitiendo al más alto nivel.</p>
-                    <img src="https://via.placeholder.com/300x200?text=Equipo+Masculino" alt="Equipo Masculino">
+                    <img src="images/cruzados_rugby_ball.png" alt="Equipo Senior Masculino">
                 </div>
                 <div class="grid-item" data-aos="flip-left" data-aos-delay="400">
                     <h3>Equipo Femenino</h3>
                     <p>Fuerte y dinámico, nuestro equipo femenino está creciendo rápidamente.</p>
-                    <img src="https://via.placeholder.com/300x200?text=Equipo+Femenino" alt="Equipo Femenino">
+                    <img src="images/cruzados_rugby_ball.png" alt="Equipo Femenino">
                 </div>
                 <div class="grid-item" data-aos="flip-left" data-aos-delay="600">
                     <h3>Equipos Juveniles e Infantiles</h3>
                     <p>Desarrollando la próxima generación de estrellas del rugby.</p>
-                    <img src="https://via.placeholder.com/300x200?text=Equipo+Juvenil" alt="Equipo Juvenil">
+                    <img src="images/cruzados_rugby_ball.png" alt="Equipos Juveniles e Infantiles">
                 </div>
             </div>
         </section>
